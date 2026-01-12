@@ -1,5 +1,5 @@
 {
-  "homepage" : "https://itsabhikrishna.github.io/bubble",
+  "homepage": "https://itsabhikrishna.github.io/bubble",
   "name": "my-next-app",
   "version": "0.1.0",
   "private": true,
@@ -7,14 +7,14 @@
     "dev": "next dev --turbopack",
     "build": "next build --turbopack",
     "predeploy": "npm run build",
-"deploy": "gh-pages -d out",
+    "deploy": "gh-pages -d out",
     "start": "next start",
     "lint": "eslint"
   },
   "dependencies": {
-    "next": "15.5.3",
-    "react": "19.1.0",
-    "react-dom": "19.1.0"
+    "next": "^16.1.1",
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
