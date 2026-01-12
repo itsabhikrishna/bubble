@@ -1,0 +1,52 @@
+.game-container {
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:flex-start;
+  width:100vw;
+  min-height:100vh;
+  font-family:"Arial Black", Arial, sans-serif;
+  color:white;
+  overflow:hidden;
+  padding-top:20px;
+
+  /* Childish animated background */
+  background: linear-gradient(-45deg, #ff9ff3, #48dbfb, #ffeaa7, #1dd1a1);
+  background-size: 400% 400%;
+  animation: colorfulBackground 20s ease infinite;
+  position:relative;
+}
+
+@keyframes colorfulBackground {
+  0%{background-position:0% 50%}
+  25%{background-position:50% 50%}
+  50%{background-position:100% 50%}
+  75%{background-position:50% 50%}
+  100%{background-position:0% 50%}
+}
+
+.game-title{
+  font-size:3rem;
+  text-shadow:2px 2px 10px #000;
+  margin-bottom:10px;
+  animation:titlePulse 2s infinite alternate;
+}
+
+@keyframes titlePulse {
+  from{transform:scale(1)}
+  to{transform:scale(1.05)}
+}
+
+.game-canvas{
+  border-radius:20px;
+  box-shadow:0 0 40px rgba(255,255,255,0.2),0 0 80px rgba(0,0,0,0.5) inset;
+  background:rgba(255,255,255,0.05);
+  margin-bottom:15px;
+}
+
+.game-instructions{
+  font-size:1.2rem;
+  text-shadow:1px 1px 5px black;
+}
+
+
