@@ -1,10 +1,13 @@
 {
+  "homepage" : "https://itsabhikrishna.github.io/bubble",
   "name": "my-next-app",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build --turbopack",
+    "predeploy": "npm run build",
+"deploy": "gh-pages -d out",
     "start": "next start",
     "lint": "eslint"
   },
